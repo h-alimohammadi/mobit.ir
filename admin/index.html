@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه اینترنتی مبیت</title>
+    <!-- <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"> -->  
+    <link rel="stylesheet" href="../assets/css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="../assets/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.min.css"/>
+    <link rel="stylesheet" href="../assets/css/custom.css">
+   
+</head>
+<body class="rtl">
+    <div class="container-fluid p-0 m-0" >
+      <header class="bg-white fixed-top" style="color: #848282 !important;">
+        <div class="container-fluid posision-reletive">
+          <div class="row d-flex justify-content-between pt-3">
+            <div class="col-1 ps-4">
+              <img src="../assets/img/mobit-logo.436fdf1.svg" width="115px" height="35px" alt="">
+            </div>
+            <div class="col-7 index-form-search">
+              <form action="#" method="POST">
+                <div class="input-group " style="height: 45px; width: 85%;">
+                  <span class="input-group-text"><i class="fas fa-search"></i></span>
+                  <input class="form-control" type="text" placeholder="جستجوی کالا،دسته بندی و ...">
+                </div>
+              </form>
+            </div>
+            <div class="col-3 d-flex justify-content-end pe-4">
+              <!-- <div class="button js-button" data-popup-content="goodpopup1">detachable popup</div> -->
+              <div class="mt3 button js-button border-primary pointer me-2" id="input-top" data-popup-content="goodpopup1" style="cursor: pointer;">
+                <span style="color: #333333;">ورود</span>
+                <div class="position-absolute rounded-3 input " style="overflow: hidden;">
+                  <div class="d-flex w-100" style="height: 285px;">
+                    <div class="text-center w-50 border-end">
+                      <ul class="list-inline py-2">
+                          <li class="d-flex justify-content-center mt-4">
+                            <div class="bg-primary w-50 rounded-circle text-white" style="padding-top: 45px ;padding-bottom: 45px;">
+                              <span>50</span>
+                              <span>امتیاز</span>
+                            </div>
+                          </li>
+                          <li class="d-block pt-3 pb-1">hossein alimohammadi</li>
+                          <li>
+                            <span class="border px-2 rounded">سطح عادی</span>
+                          </li>
+                          <li class="d-flex justify-content-between align-items-center mt-3 px-4 bg-light" style="padding-top: 24px !important;padding-bottom: 15px !important;">
+                            <span>اعتبار</span>
+                            <span class="d-flex align-items-center justify-content-between" style="width: 67px;">
+                              0 تومان
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                          </li>
+                      </ul>                     
+                    </div>
+                    <div class="w-50">
+                      <ul class="list-inline">
+                        <li class="p-3 border-bottom">
+                          <i class="far fa-user"></i>
+                          <span class="ms-2">اطلاعات حساب</span>
+                        </li>
+                        <li class="p-3 border-bottom">
+                          <i class="far fa-list-alt"></i>
+                          <span class="ms-2">سفارش ها</span>
+                        </li>
+                        <li class="p-3 border-bottom">
+                          <i class="far fa-heart"></i>
+                          <span class="ms-2">علاقه مندی ها</span>
+                        </li>
+                        <li class="p-3 border-bottom">
+                          <i class="fas fa-user-alt"></i>
+                          <span class="ms-2">دعوت از دوستان</span>
+                        </li>
+                        <li class="p-3 border-bottom">
+                          <i class="fas fa-sign-out-alt"></i>
+                          <span class="ms-2">خروج</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <img src="../assets/img/User.png" width="40px" height="40px" alt="">
+              </div>
+              <div class="border-primary pointer" id="basket-top">
+                <span class="posision-reletive" style="color: #333333;">سبد خرید</span>
+                <div class="position-absolute rounded-3 basket">
+                    <div class="text-center">
+                      <img class="mt-5" src="../assets/img/icon/empty-cart-satus.669dd90.svg" alt="">
+                      <div class="d-grid">
+                        <span class="mt-5 mb-4">سبد خرید شما خالی است</span>
+                        <a class="text-decoration-none" href="#" style="font-size: 13px;">مشاهده تخفیف‌های امروز</a>
+                      </div>
+                    </div>
+                </div>
+                <img src="../assets/img/shopping-cart.png" width="40px" height="40px" alt="">
+                <i></i>
+              </div>
+            </div>
+          </div>      
+              
+        </div>
+        
+      </header>
+        <div class="row px-4 " id="navbar" style="position: fixed;top: 61px;width: 100%;z-index: 5;background: #fff;">                
+            <div class="col-8 d-flex align-items-center" id="menu-bar">
+              <div class="me-2 me-lg-4 d-flex" style="border-color: #848282 !important;">                
+                <div class="d-flex align-items-center" id="categories" >
+                  <i class="fas fa-bars"></i>
+                  <span class="ms-2 me-3 category">دسته بندی کالاها</span>   
+                  <div class="w-100 position-absolute categories" style="display: none;">
+                    <div class="position-absolute text-center"  style="width: 97%;overflow: hidden;border-bottom-left-radius: 10px !important;border-bottom-right-radius: 10px !important;
+                    box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%); top:19px ;    right: -8px;">
+                      <div class="tab tab1 w-100 d-flex" style="height: 490px;">
+                        <div class="tabHeader">
+                          <ul class="list-inline d-grid">
+                          <li class="text-start px-3 active">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span class="ms-3" style="font-size: 13px;">موبایل و تبلت</span>
+                          </li>
+                          <li class="text-start px-3">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span class="ms-3" style="font-size: 13px;">لپ تاپ و کامپیوتر</span>
+                          </li>
+                          <li class="text-start px-3">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span class="ms-3" style="font-size: 13px;">گجت های هوشمند</span>
+                          </li>
+                          </ul>
+                        </div>
+                        <div class="tabContent w-100 text-start">
+                          <div class="tabItem active" style="display: block;">
+                            <div class="d-flex">
+                              <div class="w-25">
+                                <ul class="list-inline">
+                                  <li class="mt-2">
+                                    لوازم جانبی موبایل
+                                    <i class="fas fa-chevron-left"></i>
+                                    <ul class="list-inline" style="font-size: 13px;">
+                                      <li class="mt-1">هنذفری</li>
+                                      <li class="mt-1">شارژر</li>
+                                      <li class="mt-1">کابل</li>
+                                    </ul>
+                                  </li>
+                                  <li class="mt-2">
+                                    لوازم جانبی موبایل
+                                    <i class="fas fa-chevron-left"></i>
+                                    <ul class="list-inline" style="font-size: 13px;">
+                                      <li class="mt-1">هنذفری</li>
+                                      <li class="mt-1">شارژر</li>
+                                      <li class="mt-1">کابل</li>
+                                    </ul>
+                                  </li>    
+                                  <li class="mt-2">
+                                    لوازم جانبی موبایل
+                                    <i class="fas fa-chevron-left"></i>
+                                    <ul class="list-inline" style="font-size: 13px;">
+                                      <li class="mt-1">هنذفری</li>
+                                      <li class="mt-1">شارژر</li>
+                                      <li class="mt-1">کابل</li>
+                                    </ul>
+                                  </li>                 
+                                  <li class="mt-2">لوازم جانبی موبایل</li>
+                                  <li class="mt-2">لوازم جانبی موبایل</li>
+                                </ul>
+                              </div>
+                              <div class="w-25">1</div>
+                              <div class="w-25">1</div>
+                              <div class="w-25">1</div>
+                            </div>
+                          </div>
+                          <div class="tabItem" style="display: none;">
+                            <div class="d-flex">
+                              <div class="w-25">
+                                <ul class="list-inline">
+                                  <li class="mt-2">
+                                    لوازم جانبی موبایل
+                                    <i class="fas fa-chevron-left"></i>
+                                    <ul class="list-inline" style="font-size: 13px;">
+                                      <li class="mt-1">هنذفری</li>
+                                      <li class="mt-1">شارژر</li>
+                                      <li class="mt-1">کابل</li>
+                                    </ul>
+                                  </li>
+                                  <li class="mt-2">
+                                    لوازم جانبی موبایل
+                                    <i class="fas fa-chevron-left"></i>
+                                    <ul class="list-inline" style="font-size: 13px;">
+                                      <li class="mt-1">هنذفری</li>
+                                      <li class="mt-1">شارژر</li>
+                                      <li class="mt-1">کابل</li>
+                                    </ul>
+                                  </li>    
+                                  <li class="mt-2">
+                                    لوازم جانبی موبایل
+                                    <i class="fas fa-chevron-left"></i>
+                                    <ul class="list-inline" style="font-size: 13px;">
+                                      <li class="mt-1">هنذفری</li>
+                                      <li class="mt-1">شارژر</li>
+                                      <li class="mt-1">کابل</li>
+                                    </ul>
+                                  </li>                 
+                                  <li class="mt-2">لوازم جانبی موبایل</li>
+                                  <li class="mt-2">لوازم جانبی موبایل</li>
+                                </ul>
+                              </div>
+                              <div class="w-25">1</div>
+                              <div class="w-25">1</div>
+                              <div class="w-25">1</div>
+                            </div>
+                          </div>
+                          <div class="tabItem" style="display: none;">
+                            <div class="d-flex">
+                              <div class="w-25">
+                                <ul class="list-inline">
+                                  <li class="mt-2">
+                                    لوازم جانبی موبایل
+                                    <i class="fas fa-chevron-left"></i>
+                                    <ul class="list-inline" style="font-size: 13px;">
+                                      <li class="mt-1">هنذفری</li>
+                                      <li class="mt-1">شارژر</li>
+                                      <li class="mt-1">کابل</li>
+                                    </ul>
+                                  </li>
+                                  <li class="mt-2">
+                                    لوازم جانبی موبایل
+                                    <i class="fas fa-chevron-left"></i>
+                                    <ul class="list-inline" style="font-size: 13px;">
+                                      <li class="mt-1">هنذفری</li>
+                                      <li class="mt-1">شارژر</li>
+                                      <li class="mt-1">کابل</li>
+                                    </ul>
+                                  </li>    
+                                  <li class="mt-2">
+                                    لوازم جانبی موبایل
+                                    <i class="fas fa-chevron-left"></i>
+                                    <ul class="list-inline" style="font-size: 13px;">
+                                      <li class="mt-1">هنذفری</li>
+                                      <li class="mt-1">شارژر</li>
+                                      <li class="mt-1">کابل</li>
+                                    </ul>
+                                  </li>                 
+                                  <li class="mt-2">لوازم جانبی موبایل</li>
+                                  <li class="mt-2">لوازم جانبی موبایل</li>
+                                </ul>
+                              </div>
+                              <div class="w-25">1</div>
+                              <div class="w-25">1</div>
+                              <div class="w-25">1</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                </div>  
+                                  
+                  <div class=" d-flex justify-content-start" style="font-size: 30px;">
+                    |
+                  </div>            
+              </div>
+            
+              <div class="me-4">
+                <span>تخفیف های امروز</span>
+              </div>
+              <div class="">
+                <span>مجله آنلاین مبیت</span>
+              </div>
+            </div>
+            <div class="col-4 d-flex align-items-center justify-content-end">
+              <i class="fas fa-map-marker-alt"></i>
+              <span class="ms-2">لطفا شهر خود را انتخاب کنید</span>
+            </div>
+        </div> 
+
+      <div class="container-fluid px-2" id="content" style="margin-top: 120px;">
+          
+        <div class="row">
+          <div class="col-2 p-0" id="nav-admin" style="transition: width .5s ease;">          
+            <div class="border border-light border-2 rounded-3">
+              <span class=" fs-15 d-block text-center p-4 bg-info">
+                <img class="img-fluid" width="100px" style="transition: width .5s ease;" src="../assets/img/mobit-logo.436fdf1.svg" alt=""></span>
+              <ul class="list-inline  color-light">              
+                <li class="mt-3 rounded py-1 px-3 d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">                  
+                    <div>
+                      <span class="fs-16"><i class="far fa-user"></i></span>
+                      <span class="ms-2 fs-15 text-li-nav">سفارش ها</span>  
+                    </div>    
+                    <span class="fs-13"><i class="fas fa-chevron-left "></i></span>                                                                       
+                </li>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body p-0" style="border: 0">
+                   <ul class="list-inline  color-light ps-3 bg-light">
+                    <li class="mt-1 rounded py-1 px-3">
+                      <a class="text-decoration-none d-block color-light" href="#" >
+                      <span class="fs-16"><i class="fas fa-user-graduate"></i></span>
+                      <span class="ms-2 fs-15 text-li-nav">سفارش ها</span>
+                      </a>
+                    </li>
+                    <li class="mt-1 rounded py-1 px-3">
+                      <a class="text-decoration-none d-block color-light" href="#" >
+                      <span class="fs-16"><i class="fas fa-portrait"></i></span>
+                      <span class="ms-2 fs-15 text-li-nav">سفارش ها</span>
+                      </a>
+                    </li>
+                   </ul>
+                  </div>
+                </div>
+                <li class="mt-3 rounded py-1 px-3 d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">                  
+                  <div>
+                    <span class="fs-16"><i class="far fa-user"></i></span>
+                    <span class="ms-2 fs-15 text-li-nav">سفارش ها</span>  
+                  </div>    
+                  <span class="fs-13"><i class="fas fa-chevron-left "></i></span>                                                                       
+                </li>
+                <div class="collapse" id="collapseExample2">
+                  <div class="card card-body p-0" style="border: 0">
+                  <ul class="list-inline  color-light ps-3 bg-light">
+                    <li class="mt-1 rounded py-1 px-3">
+                      <a class="text-decoration-none d-block color-light" href="#" >
+                      <span class="fs-16"><i class="fas fa-user-graduate"></i></span>
+                      <span class="ms-2 fs-15 text-li-nav">سفارش ها</span>
+                      </a>
+                    </li>
+                    <li class="mt-1 rounded py-1 px-3">
+                      <a class="text-decoration-none d-block color-light" href="#" >
+                      <span class="fs-16"><i class="fas fa-portrait"></i></span>
+                      <span class="ms-2 fs-15 text-li-nav">سفارش ها</span>
+                      </a>
+                    </li>
+                  </ul>
+                  </div>
+                </div>        
+                <li class="mt-3 rounded py-1 px-3 d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">                  
+                  <div>
+                    <span class="fs-16"><i class="far fa-user"></i></span>
+                    <span class="ms-2 fs-15 text-li-nav">سفارش ها</span>  
+                  </div>    
+                  <span class="fs-13"><i class="fas fa-chevron-left "></i></span>                                                                       
+                </li>
+                <div class="collapse" id="collapseExample3">
+                  <div class="card card-body p-0" style="border: 0">
+                  <ul class="list-inline  color-light ps-3 bg-light">
+                    <li class="mt-1 rounded py-1 px-3">
+                      <a class="text-decoration-none d-block color-light" href="#" >
+                      <span class="fs-16"><i class="fas fa-user-graduate"></i></span>
+                      <span class="ms-2 fs-15 text-li-nav">سفارش ها</span>
+                      </a>
+                    </li>
+                    <li class="mt-1 rounded py-1 px-3">
+                      <a class="text-decoration-none d-block color-light" href="#" >
+                      <span class="fs-16"><i class="fas fa-portrait"></i></span>
+                      <span class="ms-2 fs-15 text-li-nav">سفارش ها</span>
+                      </a>
+                    </li>
+                  </ul>
+                  </div>
+                </div>               
+              </ul>
+            </div>
+          </div>
+          <div class="col-10 p-0" id="content-index-admin" style="transition: width .5s ease;">
+            <div class="border border-light border-2 p-4 rounded-3 bg-info">
+             <div>
+               <span class="pointer" id="button-nav-admin"><i class="fas fa-bars"></i></span>
+             </div>          
+            </div>
+          </div>
+        </div>
+          
+      </div>              
+      <footer style="background: #FAFAFA;" id="footer">
+        <div class="container-fluid mt-4 " >
+          <div class="row p-3" style="background: #EDF5F8;">
+            <div class="col-12 col-md-6 col-lg-3  p-2">
+              <div class="border-end border-2 ">
+                <a class="d-flex text-decoration-none align-items-center justify-content-center " href="#">
+                  <img class="" width="50px" height="50px" src="../assets/img/Certificate.png" alt="">      
+                  <div class="ms-2">
+                    <span class="d-block text-dark" style="font-size: 15px;">تضمین اصالت کالا</span>
+                    <span class="d-block" style="font-size: 12px;color: #848484;">تمامی کالا ها با گارانتی معتبر</span>
+                  </div>                
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3  p-2">
+              <div class=" border-end border-2 ">
+              <a class="d-flex text-decoration-none align-items-center justify-content-center " href="#">
+                <img class="" width="50px" height="50px" src="../assets/img/warranty-icon-png-16.png" alt="">      
+                <div class="ms-2">
+                  <span class="d-block text-dark" style="font-size: 15px;">گارانتی طلایی مبیت</span>
+                  <span class="d-block" style="font-size: 12px;color: #848484;">مهلت 7 روزه بازگشت کالا</span>
+                </div>
+                
+              </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3  p-2">
+              <div class="border-end border-2 ">
+              <a class="d-flex text-decoration-none align-items-center justify-content-center " href="#">
+                <img class="" width="50px" height="50px" src="../assets/img/72-726942_shopping-basket-icon-free-download-png-basket-svg.jpg" alt="">      
+                <div class="ms-2">
+                  <span class="d-block text-dark" style="font-size: 15px;">ارسال سریع کالا</span>
+                  <span class="d-block" style="font-size: 12px;color: #848484;">یک روز پس از سفارشات</span>
+                </div>
+                
+              </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3  p-2">
+              <div class=" ">
+              <a class="d-flex text-decoration-none align-items-center justify-content-center " href="#">
+                <img class="" width="50px" height="50px" src="../assets/img/online-support.png" alt="">      
+                <div class="ms-2">
+                  <span class="d-block text-dark" style="font-size: 15px;">پشتیبانی تلفنی</span>
+                  <span class="d-block" style="font-size: 12px;color: #848484;">پاسخگوی سوالات شما</span>
+                </div>
+                
+              </a>
+              </div>
+            </div>
+          </div>
+          <div class="row p-3 mt-4 information-web">
+            <span class="mb-5">فروشگاه اینترنتی مبیت فقط با چند کلیک ساده</span>
+            <div class="col-4 col-lg-2 d-flex ">
+              <div>
+                    <i class="fas fa-phone"></i>                
+              </div>
+              <div class="d-grid ms-3">
+                <span class="mb-3">شماره تلفن</span>
+                <span class="ltr" style="color: #848282;">034 - 91002425</span>
+              </div>
+            </div>
+            <div class="col-4 col-lg-2 d-flex ">
+              <div>
+                    <i class="fas fa-envelope"></i>                
+              </div>
+              <div class="d-grid ms-3">
+                <span class="mb-3">آدرس ایمیل</span>
+                <span class="ltr" style="color: #848282;">info@mobit.ir</span>
+              </div>
+            </div>
+            <div class="col-4 col-lg-2 d-flex ">
+              <div>
+                    <i class="fas fa-clock"></i>                
+              </div>
+              <div class="d-grid ms-3">
+                <span class="mb-3">ساعات پاسخگویی</span>
+                <span class="ltr text-start" style="color: #848282;">
+                  شنبه تا چهارشنبه 8:30 الی 21
+                  پنجشنبه 9 الی 20                
+                </span>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 d-flex align-items-center justify-content-end">
+              <div>
+                <a href="#"><img src="https://www.mobit.ir/_nuxt/img/qrcode-download-app.45e2441.png" width="90px" height="90px" alt=""></a>
+              </div>
+              <div class="d-grid ms-3">                
+                    <a class="mb-2" href="#"><img src="https://www.mobit.ir/_nuxt/img/cafe-bazaar.f8e642d.png" width="130px" height="40px" alt=""></a>
+                    <a href="#"><img src="https://www.mobit.ir/_nuxt/img/Iapps-Badge.5f7a966.png" width="130px" height="40px" alt=""></a>                                  
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3 p-4 border-top">
+            <div class="col-12 col-md-2">
+              <ul class="list-inline" >
+                <li class="pt-3"><a class="text-decoration-none" href="#" style="color: #848282;">درباره مبیت</a></li>
+                <li class="pt-3"><a class="text-decoration-none" href="#" style="color: #848282;">تماس با مبیت</a></li>
+                <li class="pt-3"><a class="text-decoration-none" href="#" style="color: #848282;">راهنمای جامع</a></li>
+                <li class="pt-3"><a class="text-decoration-none" href="#" style="color: #848282;">فرصت های شغلی</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-2">
+              <ul class="list-inline" >
+                <li class="pt-3"><a class="text-decoration-none" href="#" style="color: #848282;">روش های پرداخت</a></li>
+                <li class="pt-3"><a class="text-decoration-none" href="#" style="color: #848282;">روش ارسال کالا</a></li>
+                <li class="pt-3"><a class="text-decoration-none" href="#" style="color: #848282;">لغو و بازگشت کالا</a></li>
+                <li class="pt-3"><a class="text-decoration-none" href="#" style="color: #848282;">فروشنده شوید</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-2">
+              <ul class="list-inline" >
+                <li class="pt-3"><a class="text-decoration-none" href="#" style="color: #848282;">حریم خصوصی</a></li>
+                <li class="pt-3"><a class="text-decoration-none" href="#" style="color: #848282;">ضمانت اصالت کالا</a></li>
+                <li class="pt-3"><a class="text-decoration-none" href="#" style="color: #848282;">شرایط و قوانین</a></li>
+                <li class="pt-3"><a class="text-decoration-none" href="#" style="color: #848282;">فاکتورهای عصرارتباط</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-2">
+              <ul class="list-inline" >
+                <li class="pt-3"><a class="text-decoration-none" href="#" style="color: #848282;">پرسش های متداول</a></li>       
+              </ul>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-end">
+              <img src="../assets/img/ecunion.png" width="120px" height="120px" alt="">
+              <img src="../assets/img/samandehi.png" width="120px" height="120px" alt="">
+              <img src="../assets/img/logo.png" width="120px" height="120px" alt="">
+            </div>
+          </div>
+          <div class="row end-footer-icon border-top p-4" >
+            <div class="col-12 col-sm-6">
+              <ul class="list-inline">
+                <li class="list-inline-item ms-4"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="list-inline-item ms-4"><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+                <li class="list-inline-item ms-4"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="list-inline-item ms-4"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="list-inline-item ms-4"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 d-flex justify-content-end">
+              <span style="font-size: 13px;">کلیه حقوق این سایت متعلق به شرکت آواپرداز کیهان کریمان می باشد.</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+  </div>
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/owl.carousel.js" ></script>
+    <script src="../assets/js/bootstrap.js" ></script>
+    <script type="text/javascript" src="../assets/js/slick.js"></script>
+    <script src="../assets/js/index.js"></script>
+    <script src="../assets/js/all.js"></script>
+    <script src="../assets/js/gsap.min.js"></script>
+    <script src="../assets/js/script.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="../assets/js/jQuery.tab.js"></script>       
+    <script src="../assets/js/thumb_slider.js"></script>       
+    <script src="../assets/js/jquery-sticky-block-v-1.0.0.js"></script>       
+    <script src="../assets/js/custom.js"></script>
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "61px";
+        } else {
+          document.getElementById("navbar").style.top = "13px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+
+
+      $("#button-nav-admin").click(function(){
+        $("#nav-admin").toggleClass('active-nav');
+        $("#nav-admin img").toggleClass('active-nav-img');
+        $("#content-index-admin").toggleClass('content-index-admin');
+        setTimeout(()=>{
+          $("#nav-admin .text-li-nav").toggleClass('active-nav-text-li');
+        $("#nav-admin ul li").toggleClass('active-nav-text-li-a');
+        },150);
+      });
+      $("#nav-admin ul li").hover(function(){
+        $(this).toggleClass("active-nav-text-li-hover");
+      });
+      </script>
+</body>
+</html>
